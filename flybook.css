@@ -1,0 +1,75 @@
+.flybook-book-now-button {
+    font-size: 1.3em;
+    border: none;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    cursor: pointer
+}
+
+#FlybookWidgetIframe {
+    display: none
+}
+
+#FlybookWidgetIframe.flybook-book-now-visible {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+}
+
+.flybook-ios {
+    position: absolute !important;
+}
+
+.flybook-widget-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+    .flybook-widget-background span {
+        color: white;
+        font-weight: 600;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        position: fixed;
+        bottom: 25px;
+        left: 35%;
+    }
+
+.spinner {
+    text-align: center;
+    margin: 100px;
+    height: 50px;
+    width: 50px;
+    animation: rotate 0.8s infinite linear;
+    border: 8px solid gainsboro;
+    border-right-color: transparent;
+    border-radius: 50%;
+    display:inline-block;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
